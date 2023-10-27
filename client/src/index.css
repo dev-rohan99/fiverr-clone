@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer utilities {
+  .inboxWrapper::-webkit-scrollbar {
+    width: 5px !important;
+    border-radius: 10px !important;
+  }
+
+}
+
+@layer components {
+
+  .container{
+    @apply w-[1350px] mx-auto
+  }
+
+  .main{
+    @apply sticky top-0 bg-transparent text-white z-[999] duration-500
+  }
+
+  .navContainer {
+    @apply w-[1350px] mx-auto block
+  }
+
+  .main.active {
+    @apply text-[#292929] bg-white sticky top-0
+  }
+
+  .topHeader {
+    @apply h-[80px] flex justify-between items-center
+  }
+
+  .leftBanner{
+    @apply w-[785px] text-white 
+  }
+
+  .search{
+    @apply w-[700px] flex justify-between mb-5
+  }
+
+  .searchInput{
+    @apply h-[45px] rounded-md w-[550px] bg-white flex justify-between items-center rounded-l-md
+  }
+
+  .popular span{
+    @apply text-[17px] font-semibold
+  }
+
+  .popular button{
+    @apply text-[17px] font-semibold py-1 px-4 rounded-full border-[#fff] border-[2px] ml-5 hover:bg-white duration-500 hover:text-[#292929]
+  }
+
+  .rightBanner{
+    @apply w-[650px]
+  }
+
+  .imageOrVideoWrap{
+    @apply w-[100%] overflow-hidden
+  }
+
+  .effUnderImg{
+    @apply after:w-[70px] after:h-[2px] after:bg-[#c5c5c5] after:content-[""] after:absolute after:left-[36%] after:bottom-[35px] after:duration-500
+  }
+
+  .inboxWrapper{
+    @apply w-[100%] h-[500px] py-[40px] px-[60px] overflow-y-auto border-b-[3px] border-[#dedede]
+  }
+
+
+}
+
+.carousel-prev, .carousel-next{
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  background-color: aliceblue !important;
+  top: 150px !important;
+}
+
+.carousel-prev:before, .carousel-next:before{
+  margin: auto !important;
+}
+
+#gigImageWrap .carousel-prev.block, .carousel-next.block{
+  top: 42% !important;
+}
+
+.wrap:hover .effUnderImg::after{
+  width:100px;
+  left: 30%;
+  background-color: #1DBF73;
+}
+
+.gigImgWrap:hover img{
+  transform: scale(1.03);
+}
+
+

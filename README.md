@@ -1,4 +1,3 @@
-
 # Fiverr Clone
 
 Step into the world of seamless freelance services with my exceptional Fiverr Clone – a Freelance Marketplace Web App developed using cutting-edge MERN technology. This platform mirrors the efficiency and versatility of Fiverr, allowing clients to find top-notch freelancers for their projects. With MongoDB, Express, React, and Node.js at its core, this web app ensures optimal performance and scalability. Discover the future of freelancing with this powerful and intuitive platform!
